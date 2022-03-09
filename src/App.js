@@ -41,11 +41,6 @@ function App() {
     setCount(0)
   }
 
-  useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
-
-
   function operation(n) {
     setCount(count + 1)
     if (count % 2 === 0) {
@@ -60,53 +55,39 @@ function App() {
   }
 
   if (winner === "tie") {
-    
-      return (
-        <div className='main'>
-          <div className='container winner'>
-            <div>
-              <div className='xo'>
-              <h1 className='win'>X</h1> 
-              <h1 style={playerTwo} className='win'>O</h1> 
-              </div>
-              <h1 >DRAW!</h1>
+    return (
+      <div className='main'>
+        <div className='container winner'>
+          <div>
+            <div className='xo'>
+              <h1 className='win'>X</h1>
+              <h1 style={playerTwo} className='win'>O</h1>
             </div>
+            <h1 >DRAW!</h1>
           </div>
-
-          <button onClick={() => resetGame()}   className="btn d-block mx-auto reset">RESTART GAME</button>
-
         </div>
+        <button onClick={() => resetGame()} className="btn d-block mx-auto reset">RESTART GAME</button>
+      </div>
 
-      )
-    }
-  
-
-  if (winner === "X" || winner === "O") {
-    
-      return (
-        <div className='main'>
-          <div className='container winner'>
-            <div>
-              <h1 style={(winner === "O") ? playerTwo : playerOne} className='win'>{winner}</h1>
-              <h1 >WINNER!</h1>
-            </div>
-          </div>
-
-          <button onClick={() => resetGame()} align-items-center className="btn d-block mx-auto reset">RESTART GAME</button>
-
-        </div>
-
-      )
-    
+    )
   }
 
-
-
-
+  if (winner === "X" || winner === "O") {
+    return (
+      <div className='main'>
+        <div className='container winner'>
+          <div>
+            <h1 style={(winner === "O") ? playerTwo : playerOne} className='win'>{winner}</h1>
+            <h1 >WINNER!</h1>
+          </div>
+        </div>
+        <button onClick={() => resetGame()} align-items-center className="btn d-block mx-auto reset">RESTART GAME</button>
+      </div>
+    )
+  }
 
   return (
     <div className='container'>
-
       <div className="board">
         <h1> {count % 2 === 0 ? "X" : "O"} : Turn </h1>
         <table className="table borderless">
@@ -128,13 +109,9 @@ function App() {
             </tr>
           </tbody>
         </table>
-
       </div>
     </div>
-
-
   )
-
 }
 
 
