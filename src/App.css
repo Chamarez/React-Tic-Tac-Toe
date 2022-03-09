@@ -1,62 +1,70 @@
-
-.container{
+.container {
     display: grid;
-    height: 50vh ;
+    height: 50vh;
     width: 50vh !important;
     text-align: center;
-    background-color:  rgb(0, 200, 172);
+    background-color: rgb(0, 200, 172);
 }
-.winner{
+
+.winner {
     display: grid !important;
 }
-table{
-    height: auto!important;
-    width   : auto!important;
+
+table {
+    height: auto !important;
+    width: auto !important;
 }
-.btn{
+
+.btn {
     margin-top: 10%;
-    height:7rem;
+    height: 7rem;
     width: 6rem;
 }
 
-.board{
+.board {
     margin-top: 10%;
     height: auto !important;
     width: auto !important;
     display: grid;
     text-align: center;
 }
-.main{
+
+.main {
     margin-top: 10%;
     height: auto !important;
     width: auto !important;
     display: grid;
-    text-align: center; 
+    text-align: center;
 }
-.first{
-    border-right: 2px solid rgb(0, 169, 147) !important;
-}
-.second{
+
+.first {
     border-right: 2px solid rgb(0, 169, 147) !important;
 }
 
-.middle{
+.second {
+    border-right: 2px solid rgb(0, 169, 147) !important;
+}
+
+.middle {
     border-bottom: 2px solid rgb(0, 169, 147) !important;
     border-top: 2px solid rgb(0, 169, 147) !important;
 }
-.button{
-    border-bottom-width:0px !important;
+
+.button {
+    border-bottom-width: 0px !important;
 }
 
 
-.win{
+.win {
     font-size: 30vh;
 }
-.btn{
+
+.btn {
     font-size: 6rem !important;
-   
+
 }
-.reset{ 
+
+.reset {
     margin: 0% !important;
     font-size: 1.5rem !important;
     justify-content: center;
@@ -65,10 +73,10 @@ table{
     width: 20rem;
 }
 
-.xo{
-    display:flex !important;
+.xo {
+    display: flex !important;
 }
 
-.nextPlayer{
+.nextPlayer {
     color: rgb(175, 171, 186);
 }
