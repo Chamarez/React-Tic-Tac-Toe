@@ -84,7 +84,7 @@ function App() {
             <h1 >WINNER!</h1>
           </div>
         </div>
-        <button onClick={() => resetGame()} align-items-center className="btn d-block mx-auto reset">RESTART GAME</button>
+        <button onClick={() => resetGame()} className="btn d-block mx-auto reset">RESTART GAME</button>
       </div>
     )
   }

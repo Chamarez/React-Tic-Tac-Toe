@@ -11,6 +11,7 @@
 }
 
 table {
+    margin:  1rem !important;
     height: auto !important;
     width: auto !important;
 }
@@ -38,16 +39,16 @@ table {
 }
 
 .first {
-    border-right: 2px solid rgb(0, 169, 147) !important;
+    border-right: 0.4rem solid rgb(0, 169, 147) !important;
 }
 
 .second {
-    border-right: 2px solid rgb(0, 169, 147) !important;
+    border-right: 0.4rem solid rgb(0, 169, 147) !important;
 }
 
 .middle {
-    border-bottom: 2px solid rgb(0, 169, 147) !important;
-    border-top: 2px solid rgb(0, 169, 147) !important;
+    border-bottom: 0.4rem solid rgb(0, 169, 147) !important;
+    border-top: 0.4rem solid rgb(0, 169, 147) !important;
 }
 
 .button {
