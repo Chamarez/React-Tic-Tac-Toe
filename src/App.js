@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 
 
 function App() {
-
+  let arr = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
   const [count, setCount] = useState(0);
-  const [game, setGame] = useState([" ", " ", " ", " ", " ", " ", " ", " ", " ",]);
+  const [game, setGame] = useState(arr);
 
   const playerTwo = {
     color: 'rgb(230, 244, 207)'
@@ -35,10 +35,9 @@ function App() {
       return "tie"
     }
     return null;
-
   }
   function resetGame() {
-    setGame([" ", " ", " ", " ", " ", " ", " ", " ", " ",])
+    setGame(arr)
     setCount(0)
   }
 
@@ -46,11 +45,9 @@ function App() {
     document.title = `You clicked ${count} times`;
   });
 
-  let arr = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 
   function operation(n) {
     setCount(count + 1)
-    console.log("n:" + n)
     if (count % 2 === 0) {
       arr = [...game]
       arr[n - 1] = "X"
@@ -62,8 +59,8 @@ function App() {
     }
   }
 
-  if (winner == "tie") {
-    {
+  if (winner === "tie") {
+    
       return (
         <div className='main'>
           <div className='container winner'>
@@ -76,16 +73,16 @@ function App() {
             </div>
           </div>
 
-          <button onClick={() => resetGame()} className="btn d-block mx-auto reset">RESTART GAME</button>
+          <button onClick={() => resetGame()}   className="btn d-block mx-auto reset">RESTART GAME</button>
 
         </div>
 
       )
     }
-  }
+  
 
-  if (winner == "X" || winner == "O") {
-    {
+  if (winner === "X" || winner === "O") {
+    
       return (
         <div className='main'>
           <div className='container winner'>
@@ -100,7 +97,7 @@ function App() {
         </div>
 
       )
-    }
+    
   }
 
 
