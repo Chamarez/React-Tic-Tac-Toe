@@ -28,18 +28,26 @@
     border-bottom: 2px solid rgb(0, 169, 147) !important;
     border-top: 2px solid rgb(0, 169, 147) !important;
 }
-.bottom{
-    border-bottom-width:0px !important
+.button{
+    border-bottom-width:0px !important;
 }
+
 
 .win{
     font-size: 30vh;
 }
-
+.btn{
+    font-size: 2rem !important;
+}
 .reset{
+    font-size: 1rem !important;
     justify-content: center;
     text-align: center;
     color: rgb(0, 198, 187) !important;
     box-shadow: none !important;
     width: 20%;
+}
+
+.xo{
+    display:flex !important;
 }
