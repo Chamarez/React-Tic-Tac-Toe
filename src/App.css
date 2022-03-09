@@ -1,21 +1,16 @@
 .container{
     display: flex;
+    height: 60vh ;
+    width: 60vh !important;
     margin-top: 10%;
     justify-content: center;
     text-align: center;
+    background-color:  rgb(0, 200, 172);
+}
+.winner{
+    display: grid !important;
 }
 
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 18rem;
-    justify-content: center;
-    margin: 2rem .5rem;
-    margin: 0px;
-    padding: 0px;
-    border: none !important ;
-
-}
 .btn{
     height: 3rem;
     width: 5rem;
@@ -23,16 +18,28 @@
 
 
 .first{
-    border-right: 2px solid red !important;
+    border-right: 2px solid rgb(0, 169, 147) !important;
 }
 .second{
-    border-right: 2px solid red !important;
+    border-right: 2px solid rgb(0, 169, 147) !important;
 }
 
 .middle{
-    border-bottom: 2px solid red !important;
-    border-top: 2px solid red !important;
+    border-bottom: 2px solid rgb(0, 169, 147) !important;
+    border-top: 2px solid rgb(0, 169, 147) !important;
 }
 .bottom{
     border-bottom-width:0px !important
+}
+
+.win{
+    font-size: 30vh;
+}
+
+.reset{
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 198, 187) !important;
+    box-shadow: none !important;
+    width: 20%;
 }
