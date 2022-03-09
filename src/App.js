@@ -57,6 +57,7 @@ function App() {
   if (winner === "tie") {
     return (
       <div className='main'>
+      <h1 className='nextPlayer'> Game Over </h1>
         <div className='container winner'>
           <div>
             <div className='xo'>
@@ -68,6 +69,7 @@ function App() {
         </div>
         <button onClick={() => resetGame()} className="btn d-block mx-auto reset">RESTART GAME</button>
       </div>
+    
 
     )
   }
@@ -75,6 +77,7 @@ function App() {
   if (winner === "X" || winner === "O") {
     return (
       <div className='main'>
+        <h1 className='nextPlayer'> Game Over </h1>
         <div className='container winner'>
           <div>
             <h1 style={(winner === "O") ? playerTwo : playerOne} className='win'>{winner}</h1>
@@ -87,9 +90,9 @@ function App() {
   }
 
   return (
+    <div className="board"> 
+    <h1 className='nextPlayer'> {count % 2 === 0 ? "X" : "O"} : Turn </h1>
     <div className='container'>
-      <div className="board">
-        <h1> {count % 2 === 0 ? "X" : "O"} : Turn </h1>
         <table className="table borderless">
           <tbody>
             <tr>
@@ -110,7 +113,7 @@ function App() {
           </tbody>
         </table>
       </div>
-    </div>
+    </div> 
   )
 }
 

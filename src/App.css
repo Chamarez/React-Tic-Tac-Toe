@@ -1,22 +1,38 @@
+
 .container{
-    display: flex;
-    height: 60vh ;
-    width: 60vh !important;
-    margin-top: 10%;
-    justify-content: center;
+    display: grid;
+    height: 50vh ;
+    width: 50vh !important;
     text-align: center;
     background-color:  rgb(0, 200, 172);
 }
 .winner{
     display: grid !important;
 }
-
+table{
+    height: auto!important;
+    width   : auto!important;
+}
 .btn{
-    height: 3rem;
-    width: 5rem;
+    margin-top: 10%;
+    height:7rem;
+    width: 6rem;
 }
 
-
+.board{
+    margin-top: 10%;
+    height: auto !important;
+    width: auto !important;
+    display: grid;
+    text-align: center;
+}
+.main{
+    margin-top: 10%;
+    height: auto !important;
+    width: auto !important;
+    display: grid;
+    text-align: center; 
+}
 .first{
     border-right: 2px solid rgb(0, 169, 147) !important;
 }
@@ -37,17 +53,22 @@
     font-size: 30vh;
 }
 .btn{
-    font-size: 2rem !important;
+    font-size: 6rem !important;
+   
 }
-.reset{
-    font-size: 1rem !important;
+.reset{ 
+    margin: 0% !important;
+    font-size: 1.5rem !important;
     justify-content: center;
-    text-align: center;
     color: rgb(0, 198, 187) !important;
     box-shadow: none !important;
-    width: 20%;
+    width: 20rem;
 }
 
 .xo{
     display:flex !important;
+}
+
+.nextPlayer{
+    color: rgb(175, 171, 186);
 }
